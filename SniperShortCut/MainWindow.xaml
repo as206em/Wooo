@@ -1,0 +1,1063 @@
+﻿<Window
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+        x:Class="WooowShortCuts.MainWindow"
+        Title="" Height="148" Width="901" Loaded="Window_Loaded" IsEnabled="True" ResizeMode="NoResize" ShowInTaskbar="False" WindowStyle="None" AllowsTransparency="True" Background="#00000000" Name="Window1" Opacity="1" MouseLeave="Window1_MouseLeave" MouseEnter="Window1_MouseEnter" Closing="Window1_Closing" MouseMove="Window1_MouseMove">
+
+    <Window.Resources>
+
+        <Storyboard x:Key="Storyboard1">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="image1">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="1.2" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="1.5" />
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="image1">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="1.2" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="1.5" />
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="image1">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="0" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="20" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="-20" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="0" />
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="Storyboard2">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="image2">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="1.2" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="1.5" />
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="image2">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="1.2" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="1.5" />
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="image2">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="0" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="20" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="-20" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="0" />
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="Storyboard3">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="image3">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="1.2" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="1.5" />
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="image3">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="1.2" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="1.5" />
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="image3">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="0" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="20" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="-20" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="0" />
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="Storyboard4">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="image4">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="1.2" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="1.5" />
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="image4">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="1.2" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="1.5" />
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="image4">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="0" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="20" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="-20" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="0" />
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="Storyboard5">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="image5">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="0" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="20" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="-20" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="0" />
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="image5">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="1.2" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="1.5" />
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="image5">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="1.2" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="1.5" />
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="Storyboard6">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="image6">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="1.2" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="1.5" />
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="image6">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="1.2" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="1.5" />
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="image6">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="0" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="20" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="-20" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="0" />
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="Storyboard7">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="image7">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="1.2" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="1.5" />
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="image7">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="1.2" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="1.5" />
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="image7">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="0" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="20" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="-20" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="0" />
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="Storyboard8">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="image8">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="1.2" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="1.5" />
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="image8">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="1.2" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="1.5" />
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="image8">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="0" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="20" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="-20" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="0" />
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="Storyboard9">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="image9">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="1.2" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="1.5" />
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="image9">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="1.2" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="1.5" />
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="image9">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="0" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="20" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="-20" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="0" />
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="Storyboard10">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="image10">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="1.2" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="1.5" />
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="image10">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="1.2" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="1.5" />
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="image10">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="0" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="20" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="-20" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="0" />
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="Storyboard11">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="image11">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="1.2" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="1.5" />
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="image11">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="1.2" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="1.5" />
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="image11">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="0" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="20" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="-20" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="0" />
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="Storyboard12">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="image12">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="1.2" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="1.5" />
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="image12">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="1.2" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="1.5" />
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="image12">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="0" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="20" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="-20" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="0" />
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="Storyboard13">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="image13">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="1.2" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="1.5" />
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="image13">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="1.2" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="1.5" />
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="image13">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="0" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="20" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="-20" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="0" />
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="Storyboard14">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="image14">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="1.2" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="1.5" />
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="image14">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="1" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="1.5" />
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="image14">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="0" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="20" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="-20" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="0" />
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="Storyboard15">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="image15">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="1.2" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="1.5" />
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="image15">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="1.2" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="1.5" />
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="image15">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="0" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="20" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="-20" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="0" />
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="Storyboard16">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="image1">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="0.5" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="1.2" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="0.8" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="1" />
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="image1">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="1" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="0.5" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="1.2" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="1" />
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="Storyboard17">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="image2">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="0.5" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="1.2" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="0.8" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="1" />
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="image2">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="1" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="0.5" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="1.2" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="1" />
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="Storyboard18">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="image3">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="0.5" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="1.2" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="0.8" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="1" />
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="image3">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="1" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="0.5" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="1.2" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="1" />
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="Storyboard19">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="image4">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="0.5" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="1.2" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="0.8" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="1" />
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="image4">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="1" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="0.5" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="1.2" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="1" />
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="Storyboard20">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="image5">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="0.5" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="1.2" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="0.8" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="1" />
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="image5">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="1" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="0.5" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="1.2" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="1" />
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="Storyboard21">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="image6">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="0.5" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="1.2" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="0.8" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="1" />
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="image6">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="1" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="0.5" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="1.2" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="1" />
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="Storyboard22">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="image7">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="0.5" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="1.2" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="0.8" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="1" />
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="image7">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="1" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="0.5" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="1.2" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="1" />
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="Storyboard23">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="image8">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="0.5" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="1.2" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="0.8" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="1" />
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="image8">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="1" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="0.5" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="1.2" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="1" />
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="Storyboard24">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="image9">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="0.5" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="1.2" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="0.8" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="1" />
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="image9">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="1" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="0.5" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="1.2" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="1" />
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="Storyboard25">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="image10">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="0.5" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="1.2" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="0.8" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="1" />
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="image10">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="1" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="0.5" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="1.2" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="1" />
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="Storyboard26">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="image11">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="0.5" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="1.2" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="0.8" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="1" />
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="image11">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="1" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="0.5" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="1.2" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="1" />
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="Storyboard27">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="image12">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="0.5" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="1.2" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="0.8" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="1" />
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="image12">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="1" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="0.5" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="1.2" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="1" />
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="Storyboard28">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="image13">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="0.5" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="1.2" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="0.8" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="1" />
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="image13">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="1" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="0.5" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="1.2" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="1" />
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="Storyboard29">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="image14">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="0.5" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="1.2" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="0.8" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="1" />
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="image14">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="1" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="0.5" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="1.2" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="1" />
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="Storyboard30">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="image15">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="0.5" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="1.2" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="0.8" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="1" />
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="image15">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="1" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="0.5" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="1.2" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="1" />
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="Storyboard31">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="image16">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="360" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="0" />
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="Storyboard32">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="image17">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="360" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="0" />
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="Storyboard33">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="image18">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="360" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="0" />
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="Storyboard34">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="image19">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="360" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="0" />
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="Storyboard35">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="image20">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="360" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="0" />
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="Storyboard36">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="image21">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="360" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="0" />
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="Storyboard37">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="image22">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="360" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="0" />
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="Storyboard38">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="image23">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="360" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="0" />
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="Storyboard39">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="image24">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="360" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="0" />
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="EditeModeStoryBoard">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="image1">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.04" Value="8" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.12" Value="-8" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="8" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.28" Value="-8" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.36" Value="8" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="0" />
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="image2">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="0" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.44" Value="8" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.52" Value="-8" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="8" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.68" Value="-8" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.76" Value="8" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.8" Value="0" />
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="image3">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.04" Value="8" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.12" Value="-8" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="8" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.28" Value="-8" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.36" Value="8" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="0" />
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="image5">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.04" Value="8" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.12" Value="-8" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="8" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.28" Value="-8" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.36" Value="8" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="0" />
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="image7">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.04" Value="8" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.12" Value="-8" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="8" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.28" Value="-8" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.36" Value="8" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="0" />
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="image9">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.04" Value="8" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.12" Value="-8" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="8" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.28" Value="-8" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.36" Value="8" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="0" />
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="image11">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.04" Value="8" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.12" Value="-8" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="8" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.28" Value="-8" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.36" Value="8" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="0" />
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="image13">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.04" Value="8" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.12" Value="-8" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="8" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.28" Value="-8" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.36" Value="8" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="0" />
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="image15">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.04" Value="8" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.12" Value="-8" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="8" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.28" Value="-8" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.36" Value="8" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="0" />
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="image4">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="0" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.44" Value="8" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.52" Value="-8" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="8" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.68" Value="-8" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.76" Value="8" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.8" Value="0" />
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="image6">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="0" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.44" Value="8" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.52" Value="-8" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="8" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.68" Value="-8" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.76" Value="8" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.8" Value="0" />
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="image8">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="0" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.44" Value="8" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.52" Value="-8" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="8" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.68" Value="-8" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.76" Value="8" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.8" Value="0" />
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="image10">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="0" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.44" Value="8" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.52" Value="-8" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="8" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.68" Value="-8" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.76" Value="8" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.8" Value="0" />
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="image12">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="0" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.44" Value="8" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.52" Value="-8" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="8" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.68" Value="-8" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.76" Value="8" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.8" Value="0" />
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="image14">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="0" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.44" Value="8" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.52" Value="-8" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="8" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.68" Value="-8" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.76" Value="8" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.8" Value="0" />
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="OpatcityDown">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="Window1">
+                <EasingDoubleKeyFrame KeyTime="0" Value="1" />
+                <EasingDoubleKeyFrame KeyTime="0:0:8" Value="1" />
+                <EasingDoubleKeyFrame KeyTime="0:0:10" Value="0.5" />
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="OpacityUp">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="Window1">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0.5" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="1" />
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="Showupopacity">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="Window1">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0.5" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="1" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.9" Value="0.5" />
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+    </Window.Resources>
+
+    <Window.Triggers>
+        <EventTrigger RoutedEvent="Mouse.MouseEnter" SourceName="image1">
+            <BeginStoryboard x:Name="Storyboard1_BeginStoryboard" Storyboard="{StaticResource Storyboard1}" />
+        </EventTrigger>
+        <EventTrigger RoutedEvent="Mouse.MouseEnter" SourceName="image2">
+            <BeginStoryboard x:Name="Storyboard2_BeginStoryboard" Storyboard="{StaticResource Storyboard2}" />
+        </EventTrigger>
+        <EventTrigger RoutedEvent="Mouse.MouseEnter" SourceName="image3">
+            <BeginStoryboard x:Name="Storyboard3_BeginStoryboard" Storyboard="{StaticResource Storyboard3}" />
+        </EventTrigger>
+        <EventTrigger RoutedEvent="Mouse.MouseEnter" SourceName="image4">
+            <BeginStoryboard x:Name="Storyboard4_BeginStoryboard" Storyboard="{StaticResource Storyboard4}" />
+        </EventTrigger>
+        <EventTrigger RoutedEvent="Mouse.MouseEnter" SourceName="image5">
+            <BeginStoryboard x:Name="Storyboard5_BeginStoryboard" Storyboard="{StaticResource Storyboard5}" />
+        </EventTrigger>
+        <EventTrigger RoutedEvent="Mouse.MouseEnter" SourceName="image6">
+            <BeginStoryboard x:Name="Storyboard6_BeginStoryboard" Storyboard="{StaticResource Storyboard6}" />
+        </EventTrigger>
+        <EventTrigger RoutedEvent="Mouse.MouseEnter" SourceName="image7">
+            <BeginStoryboard x:Name="Storyboard7_BeginStoryboard" Storyboard="{StaticResource Storyboard7}" />
+        </EventTrigger>
+        <EventTrigger RoutedEvent="Mouse.MouseEnter" SourceName="image8">
+            <BeginStoryboard x:Name="Storyboard8_BeginStoryboard" Storyboard="{StaticResource Storyboard8}" />
+        </EventTrigger>
+        <EventTrigger RoutedEvent="Mouse.MouseEnter" SourceName="image9">
+            <BeginStoryboard x:Name="Storyboard9_BeginStoryboard" Storyboard="{StaticResource Storyboard9}" />
+        </EventTrigger>
+        <EventTrigger RoutedEvent="Mouse.MouseEnter" SourceName="image10">
+            <BeginStoryboard x:Name="Storyboard9_BeginStoryboard1" Storyboard="{StaticResource Storyboard10}" />
+        </EventTrigger>
+        <EventTrigger RoutedEvent="Mouse.MouseEnter" SourceName="image11">
+            <BeginStoryboard x:Name="Storyboard11_BeginStoryboard" Storyboard="{StaticResource Storyboard11}" />
+        </EventTrigger>
+        <EventTrigger RoutedEvent="Mouse.MouseEnter" SourceName="image12">
+            <BeginStoryboard x:Name="Storyboard12_BeginStoryboard" Storyboard="{StaticResource Storyboard12}" />
+        </EventTrigger>
+        <EventTrigger RoutedEvent="Mouse.MouseEnter" SourceName="image13">
+            <BeginStoryboard x:Name="Storyboard13_BeginStoryboard" Storyboard="{StaticResource Storyboard13}" />
+        </EventTrigger>
+        <EventTrigger RoutedEvent="Mouse.MouseEnter" SourceName="image14">
+            <BeginStoryboard x:Name="Storyboard14_BeginStoryboard" Storyboard="{StaticResource Storyboard14}" />
+        </EventTrigger>
+        <EventTrigger RoutedEvent="Mouse.MouseEnter" SourceName="image15">
+            <BeginStoryboard x:Name="Storyboard15_BeginStoryboard" Storyboard="{StaticResource Storyboard15}" />
+        </EventTrigger>
+        <EventTrigger RoutedEvent="Mouse.MouseLeave" SourceName="image1">
+            <BeginStoryboard x:Name="Storyboard16_BeginStoryboard" Storyboard="{StaticResource Storyboard16}" />
+        </EventTrigger>
+        <EventTrigger RoutedEvent="Mouse.MouseLeave" SourceName="image2">
+            <BeginStoryboard x:Name="Storyboard17_BeginStoryboard" Storyboard="{StaticResource Storyboard17}" />
+        </EventTrigger>
+        <EventTrigger RoutedEvent="Mouse.MouseLeave" SourceName="image3">
+            <BeginStoryboard x:Name="Storyboard18_BeginStoryboard" Storyboard="{StaticResource Storyboard18}" />
+        </EventTrigger>
+        <EventTrigger RoutedEvent="Mouse.MouseLeave" SourceName="image4">
+            <BeginStoryboard x:Name="Storyboard19_BeginStoryboard" Storyboard="{StaticResource Storyboard19}" />
+        </EventTrigger>
+        <EventTrigger RoutedEvent="Mouse.MouseLeave" SourceName="image5">
+            <BeginStoryboard x:Name="Storyboard20_BeginStoryboard" Storyboard="{StaticResource Storyboard20}" />
+        </EventTrigger>
+        <EventTrigger RoutedEvent="Mouse.MouseLeave" SourceName="image6">
+            <BeginStoryboard x:Name="Storyboard21_BeginStoryboard" Storyboard="{StaticResource Storyboard21}" />
+        </EventTrigger>
+        <EventTrigger RoutedEvent="Mouse.MouseLeave" SourceName="image7">
+            <BeginStoryboard x:Name="Storyboard22_BeginStoryboard" Storyboard="{StaticResource Storyboard22}" />
+        </EventTrigger>
+        <EventTrigger RoutedEvent="Mouse.MouseLeave" SourceName="image8">
+            <BeginStoryboard x:Name="Storyboard23_BeginStoryboard" Storyboard="{StaticResource Storyboard23}" />
+        </EventTrigger>
+        <EventTrigger RoutedEvent="Mouse.MouseLeave" SourceName="image9">
+            <BeginStoryboard x:Name="Storyboard24_BeginStoryboard" Storyboard="{StaticResource Storyboard24}" />
+        </EventTrigger>
+        <EventTrigger RoutedEvent="Mouse.MouseLeave" SourceName="image10">
+            <BeginStoryboard x:Name="Storyboard25_BeginStoryboard" Storyboard="{StaticResource Storyboard25}" />
+        </EventTrigger>
+        <EventTrigger RoutedEvent="Mouse.MouseLeave" SourceName="image11">
+            <BeginStoryboard x:Name="Storyboard26_BeginStoryboard" Storyboard="{StaticResource Storyboard26}" />
+        </EventTrigger>
+        <EventTrigger RoutedEvent="Mouse.MouseLeave" SourceName="image12">
+            <BeginStoryboard x:Name="Storyboard27_BeginStoryboard" Storyboard="{StaticResource Storyboard27}" />
+        </EventTrigger>
+        <EventTrigger RoutedEvent="Mouse.MouseLeave" SourceName="image13">
+            <BeginStoryboard x:Name="Storyboard28_BeginStoryboard" Storyboard="{StaticResource Storyboard28}" />
+        </EventTrigger>
+        <EventTrigger RoutedEvent="Mouse.MouseLeave" SourceName="image14">
+            <BeginStoryboard x:Name="Storyboard29_BeginStoryboard" Storyboard="{StaticResource Storyboard29}" />
+        </EventTrigger>
+        <EventTrigger RoutedEvent="Mouse.MouseLeave" SourceName="image15">
+            <BeginStoryboard x:Name="Storyboard30_BeginStoryboard" Storyboard="{StaticResource Storyboard30}" />
+        </EventTrigger>
+        <EventTrigger RoutedEvent="Mouse.MouseEnter" SourceName="image16">
+            <BeginStoryboard x:Name="Storyboard31_BeginStoryboard" Storyboard="{StaticResource Storyboard31}" />
+        </EventTrigger>
+        <EventTrigger RoutedEvent="Mouse.MouseEnter" SourceName="image17">
+            <BeginStoryboard x:Name="Storyboard32_BeginStoryboard" Storyboard="{StaticResource Storyboard32}" />
+        </EventTrigger>
+        <EventTrigger RoutedEvent="Mouse.MouseEnter" SourceName="image18">
+            <BeginStoryboard x:Name="Storyboard33_BeginStoryboard" Storyboard="{StaticResource Storyboard33}" />
+        </EventTrigger>
+        <EventTrigger RoutedEvent="Mouse.MouseEnter" SourceName="image19">
+            <BeginStoryboard x:Name="Storyboard34_BeginStoryboard" Storyboard="{StaticResource Storyboard34}" />
+        </EventTrigger>
+        <EventTrigger RoutedEvent="Mouse.MouseEnter" SourceName="image20">
+            <BeginStoryboard x:Name="Storyboard35_BeginStoryboard" Storyboard="{StaticResource Storyboard35}" />
+        </EventTrigger>
+        <EventTrigger RoutedEvent="Mouse.MouseEnter" SourceName="image21">
+            <BeginStoryboard x:Name="Storyboard35_BeginStoryboard2" Storyboard="{StaticResource Storyboard36}" />
+        </EventTrigger>
+        <EventTrigger RoutedEvent="Mouse.MouseEnter" SourceName="image22">
+            <BeginStoryboard x:Name="Storyboard1_BeginStoryboard1" Storyboard="{StaticResource Storyboard37}" />
+        </EventTrigger>
+        <EventTrigger RoutedEvent="Mouse.MouseEnter" SourceName="image23">
+            <BeginStoryboard x:Name="Storyboard38_BeginStoryboard" Storyboard="{StaticResource Storyboard38}" />
+        </EventTrigger>
+        <EventTrigger RoutedEvent="Mouse.MouseEnter" SourceName="image24">
+            <BeginStoryboard x:Name="Storyboard39_BeginStoryboard" Storyboard="{StaticResource Storyboard39}" />
+        </EventTrigger>
+        <EventTrigger RoutedEvent="FrameworkElement.Loaded">
+            <BeginStoryboard x:Name="EditeModeStoryBoard_BeginStoryboard" Storyboard="{StaticResource EditeModeStoryBoard}" />
+            <BeginStoryboard x:Name="OpacityUp_BeginStoryboard" Storyboard="{StaticResource OpacityUp}" />
+            <BeginStoryboard x:Name="Showupopacity_BeginStoryboard" Storyboard="{StaticResource Showupopacity}" />
+        </EventTrigger>
+        <EventTrigger RoutedEvent="FrameworkElement.Loaded">
+            <BeginStoryboard x:Name="OpatcityDown_BeginStoryboard" Storyboard="{StaticResource OpatcityDown}" />
+        </EventTrigger>
+        <EventTrigger RoutedEvent="FrameworkElement.Loaded">
+            <BeginStoryboard x:Name="OpacityUp_BeginStoryboard1" Storyboard="{StaticResource OpacityUp}" />
+        </EventTrigger>
+        <EventTrigger RoutedEvent="FrameworkElement.Loaded">
+            <BeginStoryboard x:Name="Showupopacity_BeginStoryboard1" Storyboard="{StaticResource Showupopacity}" />
+        </EventTrigger>
+    </Window.Triggers>
+
+    <Grid Height="112" Width="880">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="65*" />
+            <RowDefinition Height="41*" />
+            <RowDefinition Height="6*" />
+        </Grid.RowDefinitions>
+        <Rectangle Height="45" Margin="18,13,0,0" x:Name="image1" Stroke="Black" VerticalAlignment="Top" MouseLeftButtonUp="images_MouseLeftUp" MouseRightButtonUp="images_MouseRightUp" RadiusX="5" RadiusY="5" StrokeThickness="0.001" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" Width="45" Cursor="Hand">
+            <Rectangle.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform />
+                    <SkewTransform />
+                    <RotateTransform />
+                    <TranslateTransform />
+                </TransformGroup>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <Rectangle Height="45" Margin="75,13,0,0" x:Name="image2" Stroke="Black" VerticalAlignment="Top" MouseLeftButtonUp="images_MouseLeftUp" MouseRightButtonUp="images_MouseRightUp" RadiusX="5" RadiusY="5" StrokeThickness="0.001" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" Width="45" Cursor="Hand">
+            <Rectangle.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform />
+                    <SkewTransform />
+                    <RotateTransform />
+                    <TranslateTransform />
+                </TransformGroup>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <Rectangle Height="45" HorizontalAlignment="Left" Margin="132,13,0,0" x:Name="image3" Stroke="Black" VerticalAlignment="Top" Width="45" MouseLeftButtonUp="images_MouseLeftUp" MouseRightButtonUp="images_MouseRightUp" RadiusX="5" RadiusY="5" StrokeThickness="0.001" RenderTransformOrigin="0.5,0.5" Cursor="Hand">
+            <Rectangle.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform />
+                    <SkewTransform />
+                    <RotateTransform />
+                    <TranslateTransform />
+                </TransformGroup>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <Rectangle Height="45" HorizontalAlignment="Left" Margin="189,13,0,0" x:Name="image4" Stroke="Black" VerticalAlignment="Top" Width="45" MouseLeftButtonUp="images_MouseLeftUp" MouseRightButtonUp="images_MouseRightUp" RadiusX="5" RadiusY="5" StrokeThickness="0.001" RenderTransformOrigin="0.5,0.5" Cursor="Hand">
+            <Rectangle.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform />
+                    <SkewTransform />
+                    <RotateTransform />
+                    <TranslateTransform />
+                </TransformGroup>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <Rectangle Height="45" Margin="246,13,0,0" x:Name="image5" Stroke="Black" VerticalAlignment="Top" MouseLeftButtonUp="images_MouseLeftUp" MouseRightButtonUp="images_MouseRightUp" RadiusX="5" RadiusY="5" StrokeThickness="0.001" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" Width="45" Cursor="Hand">
+            <Rectangle.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform />
+                    <SkewTransform />
+                    <RotateTransform />
+                    <TranslateTransform />
+                </TransformGroup>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <Rectangle Height="45" HorizontalAlignment="Left" Margin="303,13,0,0" x:Name="image6" Stroke="Black" VerticalAlignment="Top" Width="45" MouseLeftButtonUp="images_MouseLeftUp" MouseRightButtonUp="images_MouseRightUp" RadiusX="5" RadiusY="5" StrokeThickness="0.001" RenderTransformOrigin="0.5,0.5" Cursor="Hand">
+            <Rectangle.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform />
+                    <SkewTransform />
+                    <RotateTransform />
+                    <TranslateTransform />
+                </TransformGroup>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <Rectangle Height="45" HorizontalAlignment="Left" Margin="360,13,0,0" x:Name="image7" Stroke="Black" VerticalAlignment="Top" Width="45" MouseLeftButtonUp="images_MouseLeftUp" MouseRightButtonUp="images_MouseRightUp" RadiusX="5" RadiusY="5" StrokeThickness="0.001" RenderTransformOrigin="0.5,0.5" Cursor="Hand">
+            <Rectangle.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform />
+                    <SkewTransform />
+                    <RotateTransform />
+                    <TranslateTransform />
+                </TransformGroup>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <Rectangle Height="45" HorizontalAlignment="Left" Margin="417,13,0,0" x:Name="image8" Stroke="Black" VerticalAlignment="Top" Width="45" MouseLeftButtonUp="images_MouseLeftUp" MouseRightButtonUp="images_MouseRightUp" RadiusX="5" RadiusY="5" StrokeThickness="0.001" RenderTransformOrigin="0.5,0.5" Cursor="Hand">
+            <Rectangle.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform />
+                    <SkewTransform />
+                    <RotateTransform />
+                    <TranslateTransform />
+                </TransformGroup>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <Rectangle Height="45" HorizontalAlignment="Left" Margin="474,13,0,0" x:Name="image9" Stroke="Black" VerticalAlignment="Top" Width="45" MouseLeftButtonUp="images_MouseLeftUp" MouseRightButtonUp="images_MouseRightUp" RadiusX="5" RadiusY="5" StrokeThickness="0.001" RenderTransformOrigin="0.5,0.5" d:LayoutOverrides="HorizontalAlignment" Cursor="Hand">
+            <Rectangle.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform />
+                    <SkewTransform />
+                    <RotateTransform />
+                    <TranslateTransform />
+                </TransformGroup>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <Rectangle Height="45" HorizontalAlignment="Left" Margin="531,13,0,0" x:Name="image10" Stroke="Black" VerticalAlignment="Top" Width="45" MouseLeftButtonUp="images_MouseLeftUp" MouseRightButtonUp="images_MouseRightUp" RadiusX="5" RadiusY="5" StrokeThickness="0.001" RenderTransformOrigin="0.5,0.5" d:LayoutOverrides="HorizontalAlignment" Cursor="Hand">
+            <Rectangle.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform />
+                    <SkewTransform />
+                    <RotateTransform />
+                    <TranslateTransform />
+                </TransformGroup>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <Rectangle Height="45" HorizontalAlignment="Left" Margin="588,13,0,0" x:Name="image11" Stroke="Black" VerticalAlignment="Top" Width="45" MouseLeftButtonUp="images_MouseLeftUp" MouseRightButtonUp="images_MouseRightUp" RadiusX="5" RadiusY="5" StrokeThickness="0.001" RenderTransformOrigin="0.5,0.5" d:LayoutOverrides="HorizontalAlignment" Cursor="Hand">
+            <Rectangle.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform />
+                    <SkewTransform />
+                    <RotateTransform />
+                    <TranslateTransform />
+                </TransformGroup>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <Rectangle Height="45" HorizontalAlignment="Left" Margin="645,13,0,0" x:Name="image12" Stroke="Black" VerticalAlignment="Top" Width="45" MouseLeftButtonUp="images_MouseLeftUp" MouseRightButtonUp="images_MouseRightUp" RadiusX="5" RadiusY="5" StrokeThickness="0.001" RenderTransformOrigin="0.5,0.5" Cursor="Hand">
+            <Rectangle.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform />
+                    <SkewTransform />
+                    <RotateTransform />
+                    <TranslateTransform />
+                </TransformGroup>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <Rectangle Height="45" HorizontalAlignment="Left" Margin="702,13,0,0" x:Name="image13" Stroke="Black" VerticalAlignment="Top" Width="45" MouseLeftButtonUp="images_MouseLeftUp" MouseRightButtonUp="images_MouseRightUp" RadiusX="5" RadiusY="5" StrokeThickness="0.001" RenderTransformOrigin="0.5,0.5" Cursor="Hand">
+            <Rectangle.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform />
+                    <SkewTransform />
+                    <RotateTransform />
+                    <TranslateTransform />
+                </TransformGroup>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <Rectangle Height="45" HorizontalAlignment="Left" Margin="759,13,0,0" x:Name="image14" Stroke="Black" VerticalAlignment="Top" Width="45" MouseLeftButtonUp="images_MouseLeftUp" MouseRightButtonUp="images_MouseRightUp" RadiusX="5" RadiusY="5" StrokeThickness="0.001" RenderTransformOrigin="0.5,0.5" Cursor="Hand">
+            <Rectangle.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform />
+                    <SkewTransform />
+                    <RotateTransform />
+                    <TranslateTransform />
+                </TransformGroup>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <Rectangle Height="45" HorizontalAlignment="Left" Margin="816,13,0,0" x:Name="image15" Stroke="Black" VerticalAlignment="Top" Width="45" MouseLeftButtonUp="images_MouseLeftUp" MouseRightButtonUp="images_MouseRightUp" RadiusX="5" RadiusY="5" StrokeThickness="0.001" RenderTransformOrigin="0.5,0.5" Cursor="Hand">
+            <Rectangle.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform />
+                    <SkewTransform />
+                    <RotateTransform />
+                    <TranslateTransform />
+                </TransformGroup>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+
+        <Image Height="27" HorizontalAlignment="Left" Margin="266,5,0,0" x:Name="image16" Stretch="Fill" VerticalAlignment="Top" Width="27" MouseLeftButtonUp="image16_MouseLeftButtonUp" Source="bin/Debug/Control_image/restart.png" RenderTransformOrigin="0.5,0.5" Grid.Row="1" ToolTip="Clear Temp Data" Cursor="Hand">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform />
+                    <SkewTransform />
+                    <RotateTransform />
+                    <TranslateTransform />
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+
+        <Image Height="27" HorizontalAlignment="Left" Margin="306,5,0,0" x:Name="image17" Stretch="Fill" VerticalAlignment="Top" Width="27" MouseLeftButtonUp="image17_MouseLeftButtonUp" Source="bin/Debug/Control_image/shutdown.png" RenderTransformOrigin="0.5,0.5" Grid.Row="1" ToolTip="ShutDown" Cursor="Hand">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform />
+                    <SkewTransform />
+                    <RotateTransform />
+                    <TranslateTransform />
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image Height="27" HorizontalAlignment="Left" Margin="346,5,0,0" x:Name="image18" Stretch="Fill" VerticalAlignment="Top" Width="27" MouseLeftButtonUp="image18_MouseLeftButtonUp" Source="bin/Debug/Control_image/android1.png" RenderTransformOrigin="0.5,0.5" Grid.Row="1" ToolTip="Brightness" Cursor="Hand">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform />
+                    <SkewTransform />
+                    <RotateTransform />
+                    <TranslateTransform />
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image Height="27" HorizontalAlignment="Left" Margin="386,5,0,0" x:Name="image19" Stretch="Fill" VerticalAlignment="Top" Width="27" MouseLeftButtonUp="image19_MouseLeftButtonUp" RenderTransformOrigin="0.5,0.5" Grid.Row="1" ToolTip="Color" Cursor="Hand" Source="bin/Debug/Control_image/android2.png">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform />
+                    <SkewTransform />
+                    <RotateTransform />
+                    <TranslateTransform />
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image Height="27" HorizontalAlignment="Left" Margin="426,5,0,0" x:Name="image20" Stretch="Fill" VerticalAlignment="Top" Width="27" MouseLeftButtonUp="image20_MouseLeftButtonUp" Source="bin/Debug/Control_image/controll.png" RenderTransformOrigin="0.5,0.5" Grid.Row="1" ToolTip="Edite Mod" Cursor="Hand">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform />
+                    <SkewTransform />
+                    <RotateTransform />
+                    <TranslateTransform />
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image Height="27" HorizontalAlignment="Left" Margin="466,5,0,0" x:Name="image21" Stretch="Fill" VerticalAlignment="Top" Width="27" MouseLeftButtonUp="image21_MouseLeftButtonUp" Source="bin/Debug/Control_image/slack.png" RenderTransformOrigin="0.5,0.5" d:LayoutOverrides="HorizontalAlignment" Grid.Row="1" ToolTip="Color Mode" Cursor="Hand">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform />
+                    <SkewTransform />
+                    <RotateTransform />
+                    <TranslateTransform />
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image Height="27" HorizontalAlignment="Left" Margin="506,5,0,0" x:Name="image22" Stretch="Fill" VerticalAlignment="Top" Width="27" MouseLeftButtonUp="image22_MouseLeftButtonUp" Source="bin/Debug/Control_image/Captcher.png" RenderTransformOrigin="0.5,0.5" d:LayoutOverrides="HorizontalAlignment" Grid.Row="1" ToolTip="Screen Capture" Cursor="Hand">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform />
+                    <SkewTransform />
+                    <RotateTransform />
+                    <TranslateTransform />
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image Height="27" HorizontalAlignment="Left" Margin="546,5,0,0" x:Name="image23" Stretch="Fill" VerticalAlignment="Top" Width="27" MouseLeftButtonUp="image23_MouseLeftButtonUp" Source="bin/Debug/Control_image/performance.png" RenderTransformOrigin="0.5,0.5" d:LayoutOverrides="HorizontalAlignment" Grid.Row="1" ToolTip="Hide Application" Cursor="Hand">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform />
+                    <SkewTransform />
+                    <RotateTransform />
+                    <TranslateTransform />
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image Height="27" HorizontalAlignment="Left" Margin="586,5,0,0" x:Name="image24" Stretch="Fill" VerticalAlignment="Top" Width="27" MouseLeftButtonUp="image24_MouseLeftButtonUp" Source="bin/Debug/Control_image/screenoff.png" RenderTransformOrigin="0.5,0.5" d:LayoutOverrides="HorizontalAlignment" Grid.Row="1" ToolTip="Convert Videos to mp4" Cursor="Hand">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform />
+                    <SkewTransform />
+                    <RotateTransform />
+                    <TranslateTransform />
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Label Content="----" Height="28" HorizontalAlignment="Left" Margin="201,62,0,0" Name="label2" VerticalAlignment="Top" Grid.RowSpan="2" Foreground="White" FontWeight="Bold" FontFamily="Adobe Garamond Pro" />
+        <Label Content="----" Height="28" HorizontalAlignment="Left" Margin="201,13,0,0" Name="label3" VerticalAlignment="Top" Grid.Row="1" Foreground="White" FontWeight="Bold" FontFamily="Adobe Garamond Pro" />
+        <Label Content="Cpu usage :" Height="28" HorizontalAlignment="Left" Margin="121,62,0,0" Name="label4" VerticalAlignment="Top" Foreground="White" Grid.RowSpan="2" FontWeight="Bold" FontFamily="Adobe Garamond Pro" />
+        <Label Content="Free Ram  :" Height="28" HorizontalAlignment="Left" Margin="123,13,0,0" Name="label5" VerticalAlignment="Top" Foreground="White" Grid.Row="1" FontWeight="Bold" FontFamily="Adobe Garamond Pro" />
+        <Label Content="----" Height="28" HorizontalAlignment="Left" Margin="701,59,0,0" x:Name="label2_Copy" VerticalAlignment="Top" Grid.RowSpan="2" Foreground="White" FontWeight="Bold" FontFamily="Adobe Garamond Pro" />
+        <Label Content="----" Height="28" HorizontalAlignment="Left" Margin="701,9,0,0" x:Name="label3_Copy" VerticalAlignment="Top" Grid.Row="1" Foreground="White" FontWeight="Bold" FontFamily="Adobe Garamond Pro" />
+        <Label Content="GPU Load: " Height="28" HorizontalAlignment="Left" Margin="623,59,0,0" x:Name="label4_Copy" VerticalAlignment="Top" Foreground="White" Grid.RowSpan="2" FontWeight="Bold" FontFamily="Adobe Garamond Pro" />
+        <Label Content="GPU Temp: " Height="28" HorizontalAlignment="Left" Margin="623,10,0,0" x:Name="label5_Copy" VerticalAlignment="Top" Foreground="White" Grid.Row="1" FontWeight="Bold" FontFamily="Adobe Garamond Pro" />
+
+        <Grid.Background>
+            <ImageBrush ImageSource="bin/Debug/Background/Stamp_Template_by_Jablonka89.png" />
+        </Grid.Background>
+    </Grid>
+</Window>
